@@ -106,7 +106,7 @@ List all the features not yet done. Remove this section if there is no incomplet
 ## Additional Features
 
 Describe the additional features that has been implemented.
-menu page with start game, setting and quit choices
+#### menu page with start game, setting and quit choices.
 
 ## Contributions
 
@@ -121,8 +121,7 @@ List down the contribution of each group members.
 5. Display trail
 6. Return menu
 7. Quit game
-8. Play again
-9. Handle invallid input of command and user menu
+8. Handle invallid input of command and user menu
 
 - Submission Part 1 : Work on code displaying in video demo
 
