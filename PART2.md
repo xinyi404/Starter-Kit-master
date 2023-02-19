@@ -5,6 +5,7 @@
 Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 ## Minimum Requirements
+
 #### 1. MENU PAGE
 - user menu
 - setting
@@ -96,17 +97,20 @@ List all the features not yet done. Remove this section if there is no incomplet
 2.  Trail reset
 3.  Alien stop while encounter rock and zombies
 4.  Hide game object under rock
-5.  Remove defeated zombies
-6.  Alien hit object
-7.  Characters take turns to attack
-8.  Save game
-9.  Load game 
-10. Game end
+5.  Zombie cannot move to locations occupied by other zombies
+6.  Remove defeated zombies
+7.  Alien hit object
+8.  Characters take turns to attack
+9.  Load game
+10. Play again 
+11. Game end
+
 
 ## Additional Features
 
 Describe the additional features that has been implemented.
-#### menu page with start game, setting and quit choices.
+#### menu page with start game, setting and quit choices
+
 
 ## Contributions
 
@@ -114,49 +118,44 @@ List down the contribution of each group members.
 
 ### Ang Jin Nan
 
-1. Display setting
-2. Help Command
-3. Quit Game
-4. Display alien attributes randomly
-5. Display trail
-6. Return menu
-7. Quit game
-8. Handle invallid input of command and user menu
-
-- Submission Part 1 : Work on code displaying in video demo
-
-- Submission Part 2 : Work on code displaying in video demo
+1.  Display setting
+2.  Help Command
+3.  Quit Game
+4.  Display alien attributes randomly
+5.  Display trail
+6.  Return menu
+7.  Save game
+8.  Quit game
+9.  Handle invallid input
+10. Submission Part 1 : Work on code displaying in video demo
+11. Submission Part 2 : Work on video demonstration and documentation
 
 ### Tai Qi Tong
 
-1. Display user menu
-2. Display game objects
-3. Number of rows and columns displayed correctly 
-4. Arrow command
-5. Display Alien
-6. Alien movable inside game board
-8. Alien placed at center
-9. Change arrow direction with user command
-
-- Submission Part 1 : Work on code explaination in video demo
-
-- Submission Part 2 : Work on Documentation
+1.  Display user menu
+2.  Display game objects
+3.  Number of rows and columns displayed correctly 
+4.  Arrow command
+5.  Display Alien
+6.  Alien movable inside game board
+8.  Alien placed at center
+9.  Change arrow direction with user command
+10. Submission Part 1 : Work on code explaination in video demo
+11. Submission Part 2 : Work on video demonstration and documentation
 
 ### Tan Xin Yi
 
-1. Display game board
-2. Customize game board dimensions
-3. Customize number of zombies
-4. Dimensions of game board in odd number
-5. Display zombie
-6. Display zombie attribute randomly 
-7. Zombie attribute in range
-8. Different attributes of each zombies
-9. Display multiple zombies
-
-- Submission Part 1 : Work on Documentation
-
-- Submission Part 2 : Work on code explaination in video demo
+1.  Display game board
+2.  Customize game board dimensions
+3.  Customize number of zombies
+4.  Dimensions of game board in odd number
+5.  Display zombie
+6.  Display zombie attribute randomly 
+7.  Zombie attribute in range
+8.  Different attributes of each zombies
+9.  Display multiple zombies
+10. Submission Part 1 : Work on Documentation
+11. Submission Part 2 : Work on video demonstration and documentation
 
 
 ## Problems Encountered & Solutions
@@ -164,14 +163,15 @@ List down the contribution of each group members.
 Describe the problems encountered and provide the solutions / plan for the solutions.
 
 1.  Unable to add zombies into game board                         : Zombies class and board class were linked.
-1.  Symbols were printed when assigning zombies in board	   	  : 'vector<char>' were written to fix the zombies figure.
+1.  Symbols were printed when assigning zombies in board	   	  : vector<char> were written to fix the zombies figure.
 2.  Unable to add alien into the board                            : Alien were linked with setObject function.
 3.  Alien cant place at center                                    : Set alien function with equation were written to fix the position at the center of every board.
 4.  Alien can't move                                              : Game board were linked with alien movement function.
 5.  Unable to change arrow direction                              : Game board were connected with arrow.
-6.  Characters unable to attack                                   : Plan to connect attributes with characters and hitObject function.
-7.  Unable to change attribute                                    : Link the hit object function with game board and characters.
-8.  Unable to map hit object with the correct coordinate on board : Plan to find the correct coordinate.
-9.  Unable to move zombie                                         : Plan to write a zombie movement's function 
-10.  Unable to save game                                           : Game board and zombie were saved but board unable to display, plan to connect board with it.
-11. Unable to load game                                           : Since board can't be printed, hence saved game can't be loaded too. No solution :(
+6.  Unable to change attribute                                    : hitObject function were linked with game board and characters.
+7.  Unable to reset trail with game objects                       : Plan to link the setObject function with trail.
+8.  Characters unable to attack                                   : Plan to connect attributes with characters and hitObject function.
+9.  Unable to map hit object with the correct coordinate on board : Plan to find the correct coordinate.
+10.  Unable to move zombie                                        : Plan to write a zombie movement's function 
+11.  Unable to display save game                                  : Game board and zombie were saved but board unable to display, plan to connect board with it.
+12. Unable to load game                                           : Since board can't be printed, hence saved game can't be loaded too. No solution :(
