@@ -23,24 +23,24 @@ YouTube link [Video Demo](https://youtu.be/lFmwh_RUcJQ)
 - The game board will be displayed as a two-dimensional board that contains game characters and objects.
 - Game characters involves Alien(User) and Zombies, while the objects involves arrow, health, pod and rock.
 - User can input command in order to control the Alien.
-    a) up    : Alien will move up.
-    b) down  : Alien will move down.
-    c) left  : Alien will move left.
-    d) right : Alien will move right.
-    e) arrow : Switch the direction of an arrow object in the game board. (The player will be asked to enter the row and column of the arrow object
+    1. up    : Alien will move up.
+    2. down  : Alien will move down.
+    3. left  : Alien will move left.
+    4. right : Alien will move right.
+    5. arrow : Switch the direction of an arrow object in the game board. (The player will be asked to enter the row and column of the arrow object
                to switch, followed by the direction of the arrow object to switch to.)
-    f) help  : List and describe the commands that the player can use in the game.
-    g) save  : Save the current game to a file.(User will be asked to enter the name of the file to save to)
-    h) load  : Load a saved game from a file. (User will be asked to enter the name of the file to load from)
+    6. help  : List and describe the commands that the player can use in the game.
+    7. save  : Save the current game to a file.(User will be asked to enter the name of the file to save to)
+    8. load  : Load a saved game from a file. (User will be asked to enter the name of the file to load from)
 - Game Objects can be interact with Alien.
-    a) Arrow  : ^ (up), v (down), < (left), > (right)
+    1. Arrow  : ^ (up), v (down), < (left), > (right)
                 ~ Changes Alien’s direction of movement.
                 ~ Adds 20 attack to Alien.
-    b) Health : h 
+    2. Health : h 
                 ~ Adds 20 life to Alien.
-    c) Pod    : p 
+    3. Pod    : p 
                 ~ Instantly inflicts 10 damage to Zombie when hit by Alien.
-    d) Rock   : r 
+    4. Rock   : r 
                 ~ Hides a game object (except Rock and Trail) beneath it.
                 ~ Reveals the hidden game object when hit by Alien.
                 ~ Stops the Alien from moving.
