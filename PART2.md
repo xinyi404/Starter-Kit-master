@@ -1,71 +1,112 @@
-# Part 2 //havent copy frm qitong
+# Part 2
 
 ## Video Demo
 
 Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 ## Minimum Requirements
+1. MENU PAGE
+- user menu
+- setting
+- customize game board dimensions
+- customize number of zombies
+
+2. GAME BOARD
+- display game board
+- display game objects
+- display game characters
+- dimensions of game board in odd number
+- display row and columns number correctly 
+- characters should not move outside the game board
+- change arrow direction 
+
+3. ATTRIBUTES
+- display attributes
+- assign random values to attributes
+- each zombie have different attributes
+- zombie range lower than dimensions of game board
+
+4. ALIEN ON GAMEBOARD
+- alien placed at center of game board
+- alien movable
+- alien change direction with arrow sign 
+- display trail
+- trail reset
+- alien stop while encounter rock and zombies
+- hide a game object under rock
+
+5. ZOMBIES ON GAMEBOARD
+- display multiple zombies
+- zombie cannot move to locations occupied by other zombies
+- remove defeated zombies
+
+6. LIFE AND ATTACK
+- alien hit object
+- characters take turns to attack
+
+7. GAME COMMAND
+- arrow command
+- help command
+- save game
+- load game
+- return menu
+- quit game
+- play again
+
+- game end while zombie or alien win
+- handle invalid input
+
 
 
 ### Completed
 
 List all the features completed.
-# Part 1
 
-## Video Demo
+1.  User Menu
+2.  Setting
+3.  Customize game board
+4.  Customize number of zombies
+5.  Display game board
+6.  Display game objects
+7.  Display game characters
+8.  Dimensions of game board in odd number
+9.  Number of rows and columns displayed correctly 
+10. Characters move inside game board
+11. Change arrow direction 
+12. Display attributes
+13. Random attributes 
+14. Each zombie have different attributes 
+15. Alien's default position 
+16. Alien movement
+17. Display trail
+18. Multiple zombies
+19. Zombie in range
+20. Arrow command
+21. Help command
+22. Return menu
+23. Quit game
+24. Play again
+25. Handle invalid input
 
-YouTube link [Video Demo](https://youtu.be/lFmwh_RUcJQ)
-
-## Minimum Requirements
-able to display the user menu, setting, game board, game objects, game characters
-able to run help command and return back to menu 
-able to quit the game
-able to change rows and columns of game board by user
-able to change the total number of zombies 
-able to move character
-able to attack each other (alien and zombies)
-able to run game
-able to play the game by user
-able to skip the game by user
-able to save the game
-able to load game file
-able to play again
-game flow smoothly
-
-
-### Completed
-
-List all the features completed.
-
-1. User Menu
-2. Setting
-3. Game board
-4. Game objects
-5. Help command
-6. Quit game
-7. User can change the game board's rows and columns
-
-### To Do
+### To Do (Incomplete Requirements)
 
 List all the features not yet done. Remove this section if there is no incomplete requirements.
 
-1.  Display game characters (alien, zombies)
-2.  Change total number of zombies 
-3.  Character movement
-4.  Attack
-5.  Run game
-6.  Play game
-7.  Skip game
+1.  Alien change direction with arrow sign 
+2.  Trail reset
+3.  Alien stop while encounter rock and zombies
+4.  Hide game object under rock
+5.  Remove defeated zombies
+6.  Alien hit object
+7.  Characters take turns to attack
 8.  Save game
-9.  Load game
-10. Play again
-11. Game flow
-
+9.  Load game 
+10. Game end
 
 ## Additional Features
 
 Describe the additional features that has been implemented.
-1. Game Menu : Let player choose to start game, change settings or quit game.
+menu page with start game, setting and quit choices
 
 ## Contributions
 
@@ -73,73 +114,65 @@ List down the contribution of each group members.
 
 ### Ang Jin Nan
 
-1. Setting
+1. Display setting
 2. Help Command
 3. Quit Game
-4. Submission : Work on code displaying in video demo
+4. Display alien attributes randomly
+5. Display trail
+6. Return menu
+7. Quit game
+8. Play again
+9. Handle invallid input of command and user menu
+
+- Submission Part 1 : Work on code displaying in video demo
+
+- Submission Part 2 : Work on code displaying in video demo
 
 ### Tai Qi Tong
 
-1. User Menu
-2. Game Object
-3. Submission : Work on code explaination in video demo
+1. Display user menu
+2. Display game objects
+3. Number of rows and columns displayed correctly 
+4. Arrow command
+5. Display Alien
+6. Alien movable inside game board
+8. Alien placed at center
+9. Change arrow direction with user command
+
+- Submission Part 1 : Work on code explaination in video demo
+
+- Submission Part 2 : Work on Documentation
 
 ### Tan Xin Yi
 
-1. Game Board
-2. User can change the game board's rows and columns
-3. Submission : Work on Documentation
-4. able to change rows and columns of game board by user
-5. able to change the total number of zombies 
-6. able to move character
+1. Display game board
+2. Customize game board dimensions
+3. Customize number of zombies
+4. Dimensions of game board in odd number
+5. Display zombie
+6. Display zombie attribute randomly 
+7. Zombie attribute in range
+8. Different attributes of each zombies
+9. Display multiple zombies
+
+- Submission Part 1 : Work on Documentation
+
+- Submission Part 2 : Work on code explaination in video demo
+
 
 ## Problems Encountered & Solutions
 
 Describe the problems encountered and provide the solutions / plan for the solutions.
 
-1. unable to add zombies into game board    : Plan to link zombies class with gameboard class
-2. unable to add alien                      : Plan to change the map_ function
-
-1. User Menu
-2. Setting
-3. Game board
-4. Game objects
-5. Help command
-6. Quit game
-7. User can change the game board's rows and columns
-
-### To Do
-
-List all the features not yet done. Remove this section if there is no incomplete requirements.
-
-1. Cool Feature #1
-2. *add more*
-
-## Additional Features
-
-Describe the additional features that has been implemented.
-
-## Contributions
-
-List down the contribution of each group members.
-
-For example:
-
-### Ang Jin Nan
-
-1. Randomly generate game board.
-2. *add more*
-
-### Tai Qi Tong
-
-1. Zombie movement and attack behaviour.
-2. *add more*
-
-### Tan Xin Yi
-
-1. Implement all game objects.
-2. *add more*
-
-## Problems Encountered & Solutions
-
-Describe the problems encountered and provide the solutions / plan for the solutions.
+1.  Unable to add zombies into game board                         : Zombies class and board class were linked.
+1.  Symbols were printed when assigning zombies in board	   	  : 'vector<char>' were written to fix the zombies figure.
+2.  Unable to add alien into the board                            : Alien were linked with setObject function.
+3.  Alien cant place at center                                    : Set alien function with equation were written to fix the position at the center of every board.
+4.  Alien can't move                                              : Game board were linked with alien movement function.
+5.  Unable to change arrow direction                              : Game board were connected with arrow.
+6.  Characters unable to attack                                   : Plan to connect attributes with characters and hitObject function.
+7.  Unable to change attribute                                    : Link the hit object function with game board and characters.
+8.  Unable to map hit object with the correct coordinate on board : Plan to find the correct coordinate.
+9.  Unable to move zombie                                         : Plan to write a zombie movement's function 
+10.  Unable to save game                                           : Game board and zombie were saved but board unable to display, plan to connect board with it.
+11. Unable to load game                                           : Since board can't be printed, hence saved game can't be loaded too. No solution :(
