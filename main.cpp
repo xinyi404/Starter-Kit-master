@@ -38,6 +38,7 @@ public:
     void setObject(int x, int y, char ch);
     void chgArrow(int inputrow, int inputcol, int rows, int columns, int &zombie, string newarrow);
     void hitObject(int Alien_xPos, int Alien_yPos);
+    // void generateRandomTrail(int &rows, int &columns);
 };
 
 class Alien
@@ -197,6 +198,14 @@ int Board::getcol() const
 {
     return inputcol;
 }
+
+// void Board::generateRandomTrail(int &rows, int &columns)
+// {
+//     for (int i = 0; i < rows, ++i)
+//     {
+//         for 
+//     }
+// }
 
 vector<Zombie> zombies;
 vector<int> alienAttribute{100, 0};
@@ -417,7 +426,6 @@ void Board::hitObject(int Alien_xPos, int Alien_yPos)
         cout << "Alien's attack increased by 20. " << endl;
         alienAttribute[1] = alienAttribute[1] + 20;
     }
-
 }
 
 // Alien movement
@@ -435,6 +443,7 @@ void Alien::moveUp(Board &board, int dimY, int rows, int columns, int zombie, st
             board.setObject(Alien_xPos, Alien_yPos, '.');
             Alien_yPos = upY;
             board.display(columns, rows);
+            cout << endl;
             characterAttribute(zombie);
             board.hitObject(Alien_xPos, Alien_yPos);
             if (Alien_yPos == rows)
@@ -448,6 +457,7 @@ void Alien::moveUp(Board &board, int dimY, int rows, int columns, int zombie, st
     board.display(columns, rows);
     cout << endl;
     characterAttribute(zombie);
+
 }
 
 void Alien::moveDown(Board &board, int dimY, int rows, int columns, int zombie, string hit)
@@ -464,6 +474,7 @@ void Alien::moveDown(Board &board, int dimY, int rows, int columns, int zombie, 
             board.setObject(Alien_xPos, Alien_yPos, '.');
             Alien_yPos = downY;
             board.display(columns, rows);
+            cout << endl;
             characterAttribute(zombie);
             board.hitObject(Alien_xPos, Alien_yPos);
             if (Alien_yPos == 1)
@@ -493,6 +504,7 @@ void Alien::moveRight(Board &board, int &columns, int rows, int zombie, string h
             board.setObject(Alien_xPos,Alien_yPos,'.');
             Alien_xPos = rightX;
             board.display(columns, rows);
+            cout << endl;
             characterAttribute(zombie);
             board.hitObject(Alien_xPos, Alien_yPos);
             if (Alien_xPos == columns)
@@ -522,6 +534,7 @@ void Alien::moveLeft(Board &board, int &columns, int rows, int zombie, string hi
             board.setObject(Alien_xPos, Alien_yPos, '.');
             Alien_xPos = leftX;
             board.display(columns, rows);
+            cout << endl;
             characterAttribute(zombie);
             board.hitObject(Alien_xPos, Alien_yPos);
             if (Alien_xPos == 1)
@@ -608,9 +621,7 @@ void displayGame(int &rows, int &columns, int &zombie)
         else if (command == "help")
         {
             displayHelp();
-            system("cls");
             cout << endl;
-            // displayCommand(rows, columns, zombie);
         }
         else if (command == "save")
         {
@@ -685,8 +696,8 @@ void displayGame(int &rows, int &columns, int &zombie)
         }
         else if (command == "quit")
         {
-            bool gameQuit = true;
-            while (gameQuit)
+            bool gameQuit = false;
+            while (!gameQuit)
             {
                 char comfirmation;
                 cout << "Do you want to quit the game (y/n)? " << endl;
@@ -695,13 +706,13 @@ void displayGame(int &rows, int &columns, int &zombie)
                 cout << endl;
                 if (comfirmation == 'Y')
                 {
-                    gameQuit = false;
+                    gameQuit = true;
                     cout << "Good Bye! " << endl;
                     quit = true;
                 }
                 else if (comfirmation == 'N')
                 {
-                    gameQuit = false;
+                    gameQuit = true;
                 }
                 else
                 {
@@ -777,7 +788,7 @@ int main()
     srand(time(NULL));
     do
     {
-        cout << " _________" << endl;
+        cout << " ________________________" << endl;
         cout << "|   Alien vs. Zombie    |" << endl;
         cout << "|-----------------------|" << endl;
         cout << "| Select:               |" << endl;
@@ -785,7 +796,7 @@ int main()
         cout << "| 2 => Settings         |" << endl;
         cout << "|-----------------------|" << endl;
         cout << "| Q => Quit             |" << endl;
-        cout << "|_________|" << endl;
+        cout << "|_______________________|" << endl;
         cout << endl;
         cout << "choice => ";
         cin >> choice;
