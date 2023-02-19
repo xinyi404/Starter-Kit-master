@@ -5,13 +5,13 @@
 Please provide the YouTube link to your [Video Demo](https://youtube.com).
 
 ## Minimum Requirements
-1. MENU PAGE
+#### 1. MENU PAGE
 - user menu
 - setting
 - customize game board dimensions
 - customize number of zombies
 
-2. GAME BOARD
+#### 2. GAME BOARD
 - display game board
 - display game objects
 - display game characters
@@ -20,13 +20,13 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 - characters should not move outside the game board
 - change arrow direction 
 
-3. ATTRIBUTES
+#### 3. ATTRIBUTES
 - display attributes
 - assign random values to attributes
 - each zombie have different attributes
 - zombie range lower than dimensions of game board
 
-4. ALIEN ON GAMEBOARD
+#### 4. ALIEN ON GAMEBOARD
 - alien placed at center of game board
 - alien movable
 - alien change direction with arrow sign 
@@ -35,16 +35,16 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 - alien stop while encounter rock and zombies
 - hide a game object under rock
 
-5. ZOMBIES ON GAMEBOARD
+#### 5. ZOMBIES ON GAMEBOARD
 - display multiple zombies
 - zombie cannot move to locations occupied by other zombies
 - remove defeated zombies
 
-6. LIFE AND ATTACK
+#### 6. LIFE AND ATTACK
 - alien hit object
 - characters take turns to attack
 
-7. GAME COMMAND
+#### 7. GAME COMMAND
 - arrow command
 - help command
 - save game
