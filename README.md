@@ -5,7 +5,7 @@ Alien vs. Zombie is a role-playing game that combines puzzle, path-planning and 
 
 [alienvszombie.png](https://drive.google.com/file/d/1_B8DFHVSKUzg1RBCE_Q2ySC21yqygPKZ/view?usp=sharing) <- open by using MMU email account :D
 
-YouTube link [Video Demo](https://youtu.be/lFmwh_RUcJQ)
+YouTube link [Video Demo](https://youtu.be/VHwymZGM8bM)
 
 
 ## Compilation Instructions
