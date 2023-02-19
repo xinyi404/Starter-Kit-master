@@ -7,7 +7,6 @@
 // Emails: 1211100925@student.mmu.edu.my | 1211102777@student.mmu.edu.my | 1211100903@student.mmu.edu.my
 // Phones: 0162601883 | 0105610242 | 0108410773
 // *************************************************************************************************************
-//updated version.
 
 #include <iostream>
 #include <string>
